@@ -2,51 +2,62 @@
 
 #define S 10000
 
+void reset(void);
+void push(void);
+void pop(void);
+void peak(void);
+void size(void);
+void select(void);
+
 int stack[S];
-int size;
+int i = 0;
 int end;
 
-void reset(){
-    
-    size = 0;
-    return;
 
-}
+int main(void){
 
-int main(){
-
-    while(1){
-        void reset();
-        void push();
-        void pop();
-        void end();
-    }
+    reset();
+    select();
+    if ( end == 1) push();
 
     return 0;
 }
 
-void push(){
+void reset(void){
+    
+    i = 0;
+    return;
 
-    if( size >= S){
+}
+
+void push(void){
+
+    if( i >= S){
         printf("ERROR #1\n");
         return;
     }
 
     while(1){
-        printf("Input number %d", S);
+        printf("Input number %d", i);
 
-        scanf("%d", &stack[S]);
+        scanf("%d", &stack[i]);
         
-        if(stack[S] == -1) break;
+        if(stack[i] == -1) break;
+
+        i++;
     }
 
     return;
 }
 
-void pop(){
+void pop(void){
     return;
 }
 
-void end(){
+void select(void){
+    printf("Select number for menu\n");
+    printf(" 0= reset , 1= push , 2= pop, 3= peak, 4= stack, 5= size , -1= exit\n");
+    scanf("%d", &end);
+    
     return;
 }
