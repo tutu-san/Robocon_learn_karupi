@@ -19,6 +19,7 @@ int main(void){
     reset();
     select();
     if ( end == 1) push();
+    if ( end == 2) pop();
 
     return 0;
 }
