@@ -107,6 +107,12 @@ void peek(void){
     return;
 }
 
+void size(void){
+
+    code = 4;
+    return;
+}
+
 // select: ŠÖ”‚Ì‘I‘ğ‚È‚Ç‚ğ’S“–‚·‚é
 void select(void){
     printf("Select number for menu\n");
