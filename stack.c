@@ -42,7 +42,7 @@ void reset(void){
 void push(void){
 
     if (i < 0) reset(); // i ‚ªƒ}ƒCƒiƒX‚È•Ï”‚É‘‚«ž‚Þ‚±‚Æ‚ð–h‚®
-    if ( code == 2 || code == 3) i++;   //pop, peek‚©‚ç‚Ì’Ç‰Á“ü—Í‚Å i ‚ª 0 ‚ÌŽž‚Ì“®ì‚ð‹K’è
+    if (code == 2 || code == 3) i++;   //pop, peek‚©‚ç‚Ì’Ç‰Á“ü—Í‚Å i ‚ª 0 ‚ÌŽž‚Ì“®ì‚ð‹K’è
     while(1){
         if( i >= S){
         printf("ERROR #1\nCapacity is over\n");
@@ -119,10 +119,10 @@ void select(void){
     printf(" 0= reset , 1= push , 2= pop, 3= peek, 4= stack, 5= size , -1= exit\n");
     scanf("%d", &end);
 
-    if ( end == 0) reset();
-    if ( end == 1) push();
-    if ( end == 2) pop();
-    if ( end == 3) peek();
+    if (end == 0) reset();
+    if (end == 1) push();
+    if (end == 2) pop();
+    if (end == 3) peek();
     
     return;
 }
