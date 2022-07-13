@@ -107,6 +107,7 @@ void peek(void){
     return;
 }
 
+// size: 現在の記録サイズの確認を担当する
 void size(void){
 
     code = 4;
@@ -119,10 +120,11 @@ void select(void){
     printf(" 0= reset , 1= push , 2= pop, 3= peek, 4= stack, 5= size , -1= exit\n");
     scanf("%d", &end);
 
-    if (end == 0) reset();
-    if (end == 1) push();
-    if (end == 2) pop();
-    if (end == 3) peek();
+    if(end == 0) reset();
+    if(end == 1) push();
+    if(end == 2) pop();
+    if(end == 3) peek();
+    if(end == 4) size();
     
     return;
 }
