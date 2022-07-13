@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#define S 10  //データ容量設定
+#define S 10000  //データ容量設定
 
 //各関数のプロトタイプ宣言
 void reset(void);
