@@ -99,7 +99,7 @@ void peek(void){
         printf("ERROR #3\nNothing to show\n");
         return;
     }
-    if( stack[i] == -1) i--; //-1が入力された時の変数を表示しない
+    if(stack[i] == -1) i--; //-1が入力された時の変数を表示しない
     
     // 結果表示
     printf("%d number is %d\n", i, stack[i]);
@@ -109,6 +109,15 @@ void peek(void){
 
 // size: 現在の記録サイズの確認を担当する
 void size(void){
+    if(i >= S) i = S -1; //キャパオーバー後にバグる現象対策 (S番目はバグる)
+    if(i < 0){  // i がマイナス(データがないことになっている)なときには関数を終了させる
+        printf("ERROR #3\nNothing to show\n");
+        return;
+    }
+    if(stack[i] == -1) i--; //-1が入力された時の変数を表示しない
+
+    //結果表示
+    printf("Size is %d\n", i);
 
     code = 4;
     return;
@@ -117,7 +126,7 @@ void size(void){
 // select: 関数の選択などを担当する
 void select(void){
     printf("Select number for menu\n");
-    printf(" 0= reset , 1= push , 2= pop, 3= peek, 4= stack, 5= size , -1= exit\n");
+    printf(" 0= reset , 1= push , 2= pop, 3= peek, 4= size , -1= exit\n");
     scanf("%d", &end);
 
     if(end == 0) reset();
