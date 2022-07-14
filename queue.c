@@ -7,3 +7,17 @@ void enqueue(void);
 void dequeue(void);
 void peek(void);
 void size(void);
+void select(void);
+void reset(void);
+
+//必要グローバル変数の宣言
+int queue[S];
+int i;
+int end;
+int code;
+
+//main: select呼び出し、終了担当
+int main(void){
+
+
+}
