@@ -19,5 +19,15 @@ int code;
 //main: select呼び出し、終了担当
 int main(void){
 
+    reset(); //最初に中身をリセットさせる
 
+    return 0;
+}
+
+//reset: iをリセットすることで、再入力できるようにする。
+void reset(void){
+     
+    i = 0;
+    code = 0;
+    rerurn;
 }
