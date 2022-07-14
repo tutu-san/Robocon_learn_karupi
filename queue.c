@@ -29,5 +29,5 @@ void reset(void){
      
     i = 0;
     code = 0;
-    rerurn;
+    return;
 }
