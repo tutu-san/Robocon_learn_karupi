@@ -31,3 +31,8 @@ void reset(void){
     code = 0;
     return;
 }
+
+//enqueue: “ü—Í’S“–
+void enqueue(void){
+    
+}
