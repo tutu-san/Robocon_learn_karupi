@@ -34,5 +34,15 @@ void reset(void){
 
 //enqueue: “ü—Í’S“–
 void enqueue(void){
+    if(i < 0) reset(); // i‚ªƒ}ƒCƒiƒX‚ÌŽž‚É‘‚«ž‚Þ‚±‚Æ‚ð–h‚®
     
+    while (1)
+    {
+        if( i >= S){
+            printf("NOTICE DATA CAPACITY IS OVER\nOLD DATA WAS DELETED\n");
+            queue[] = 0;
+        }
+    }
+    
+
 }

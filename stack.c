@@ -33,6 +33,9 @@ int main(void){
 void reset(void){
     
     i = 0;
+    for(int j = 0; j < S; j++){ //stack内データ削除
+        stack[j] = 0;
+    }
     code = 0;
     return;
 
@@ -73,6 +76,7 @@ void pop(void){
 
     while(1){
         printf("%d number is %d\n", i, stack[i]);
+        stack[i] = 0; //  データを削除
         i--; //取り出しなので、i をデクリメント
         
         if(i < 0){  // 表示後に i がマイナスの場合に while から抜ける
