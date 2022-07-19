@@ -81,7 +81,7 @@ void pop(void){
         i--; //取り出しなので、i をデクリメント
         
         if(i < 0){  // 表示後に i がマイナスの場合に while から抜ける
-            printf("ERROR #2\nNothing to show\n");
+            printf("ERROR #3\nNothing to show\n");
             break;
         }
         
@@ -101,7 +101,7 @@ void pop(void){
 void peek(void){
     if(i >= S) i = S - 1;//キャパオーバー後にバグる現象対策 (S番目はバグる)
     if(i < 0){  // i がマイナス(データがないことになっている)なときには関数を終了させる
-        printf("ERROR #3\nNothing to show\n");
+        printf("ERROR #4\nNothing to show\n");
         return;
     }
     if(stack[i] == -1) i--; //-1が入力された時の変数を表示しない
@@ -116,7 +116,7 @@ void peek(void){
 void size(void){
     if(i >= S) i = S -1; //キャパオーバー後にバグる現象対策 (S番目はバグる)
     if(i < 0){  // i がマイナス(データがないことになっている)なときには関数を終了させる
-        printf("ERROR #3\nNothing to show\n");
+        printf("ERROR #5\nNothing to show\n");
         return;
     }
     if(stack[i] == -1) i--; //-1が入力された時の変数を表示しない
