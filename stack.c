@@ -36,6 +36,7 @@ void reset(void){
     for(int j = 0; j < S; j++){ //stack“àƒf[ƒ^íœ
         stack[j] = 0;
     }
+    printf("Data has been deleted\n");
     code = 0;
     return;
 
